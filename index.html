@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ヘッドコンディショニング-極-｜1day集中 6時間 完全実装セミナー。頭・頸椎・神経・頭蓋から“結果を出す”ヘッド施術を対面で習得。" />
+  <title>ヘッドコンディショニング-極-｜1day集中 6時間 完全実装セミナー</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ヘッドコンディショニング-極-｜1day集中 6時間 完全実装セミナー" />
+  <meta property="og:description" content="頭・頸椎・神経・頭蓋から“結果を出す”ヘッド施術。明日からメニュー導入できる完成度。" />
+  <meta property="og:image" content="instructor-profile.jpg.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg: #0b0f17;
+      --card: rgba(255,255,255,.06);
+      --card-2: rgba(255,255,255,.08);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --muted-2: rgba(255,255,255,.55);
+      --line: rgba(255,255,255,.12);
+      --accent: #8b5cf6;
+      --accent-2: #22d3ee;
+      --danger: #fb7185;
+      --ok: #34d399;
+      --shadow: 0 16px 44px rgba(0,0,0,.55);
+      --r: 18px;
+      --max: 1080px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+    body{
+      margin: 0;
+      font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 650px at 15% 5%, rgba(139,92,246,.35), transparent 55%),
+        radial-gradient(900px 520px at 92% 8%, rgba(34,211,238,.22), transparent 55%),
+        radial-gradient(900px 520px at 30% 110%, rgba(251,113,133,.12), transparent 55%),
+        var(--bg);
+      line-height: 1.75;
+      letter-spacing: .02em;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    .container{ max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(11,15,23,.62);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+    }
+    .brand{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+    .brand-title{ font-weight: 800; font-size: 14px; letter-spacing: .04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .brand-sub{ font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .nav-actions{ display: flex; gap: 10px; align-items: center; }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 13px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      white-space: nowrap;
+    }
+    .btn:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.08); }
+    .btn:active{ transform: translateY(0); }
+
+    .btn-primary{
+      border: 0;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #081018;
+      box-shadow: 0 14px 32px rgba(139,92,246,.22), 0 12px 28px rgba(34,211,238,.12);
+    }
+    .btn-primary:hover{ background: linear-gradient(135deg, rgba(139,92,246,.92), rgba(34,211,238,.92)); }
+
+    .hero{
+      padding: 56px 0 22px;
+    }
+    .hero-grid{
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .pill{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    h1{
+      margin: 14px 0 0;
+      font-size: clamp(28px, 3.2vw, 44px);
+      line-height: 1.18;
+      letter-spacing: .02em;
+    }
+
+    .lead{
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .hero-actions{
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .note{
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted-2);
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.05));
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+    }
+
+    .info-card{
+      padding: 18px;
+    }
+
+    .info-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .kv{
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.20);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+
+    .k{ font-size: 12px; color: var(--muted-2); font-weight: 700; letter-spacing: .05em; }
+    .v{ margin-top: 6px; font-size: 14px; font-weight: 700; color: var(--text); }
+
+    .deadline{
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(251,113,133,.08);
+      border: 1px solid rgba(251,113,133,.24);
+    }
+    .deadline strong{ color: rgba(255,255,255,.95); }
+
+    section{
+      padding: 34px 0;
+    }
+
+    .section-title{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 14px;
+    }
+
+    h2{
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: .03em;
+    }
+
+    .subtext{ color: var(--muted); font-size: 13px; }
+
+    .grid-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .list{
+      margin: 0;
+      padding-left: 1.1em;
+      color: var(--muted);
+    }
+
+    .callout{
+      padding: 16px;
+      border-radius: var(--r);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+    }
+
+    .callout strong{ color: rgba(255,255,255,.95); }
+
+    .curriculum{
+      padding: 18px;
+    }
+
+    details{
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(0,0,0,.18);
+      overflow: hidden;
+    }
+
+    details + details{ margin-top: 10px; }
+
+    summary{
+      cursor: pointer;
+      list-style: none;
+      padding: 14px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    summary::-webkit-details-marker{ display:none; }
+
+    .step-meta{ color: var(--muted-2); font-weight: 800; font-size: 12px; }
+
+    .details-body{
+      padding: 0 14px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .badge-row{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .instructor{
+      padding: 18px;
+    }
+
+    .instructor-grid{
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .portrait{
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      overflow: hidden;
+    }
+    .portrait img{ width: 100%; height: 100%; object-fit: cover; display:block; }
+
+    .name{
+      font-weight: 900;
+      font-size: 18px;
+      margin: 0;
+    }
+    .role{ margin-top: 4px; color: var(--muted); font-weight: 700; font-size: 13px; }
+    .bio{ margin-top: 10px; color: var(--muted); font-size: 14px; }
+
+    .cta{
+      padding: 22px;
+      background:
+        radial-gradient(900px 420px at 15% 25%, rgba(139,92,246,.36), transparent 58%),
+        radial-gradient(900px 420px at 82% 20%, rgba(34,211,238,.20), transparent 58%),
+        rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: calc(var(--r) + 2px);
+    }
+
+    .cta h2{ font-size: 20px; margin: 0; }
+    .cta p{ margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+
+    .cta-actions{ display:flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+
+    .faq{ padding: 18px; }
+
+    footer{
+      padding: 26px 0 46px;
+      color: var(--muted-2);
+      font-size: 12px;
+      border-top: 1px solid var(--line);
+      background: rgba(0,0,0,.16);
+    }
+
+    .floating{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 14px;
+      z-index: 60;
+      pointer-events: none;
+    }
+
+    .floating-inner{
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .floating-bar{
+      pointer-events: auto;
+      width: min(720px, calc(100% - 26px));
+      border-radius: 999px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(11,15,23,.62);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 18px 42px rgba(0,0,0,.55);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .floating-text{
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-left: 6px;
+    }
+    .floating-text strong{ font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .floating-text span{ font-size: 11px; color: var(--muted-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .hr{ height: 1px; background: var(--line); margin: 18px 0; }
+
+    @media (max-width: 880px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .info-grid{ grid-template-columns: 1fr; }
+      .grid-2{ grid-template-columns: 1fr; }
+      .instructor-grid{ grid-template-columns: 1fr; }
+      .portrait{ aspect-ratio: 16/10; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .btn{ transition: none; }
+      .btn:hover{ transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="ページタイトル">
+          <div class="brand-title">ヘッドコンディショニング-極-</div>
+          <div class="brand-sub">1day集中｜6時間 完全実装セミナー（対面／大阪）</div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn" href="#curriculum">カリキュラム</a>
+          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc_fpacTK-0-GG_N5FOGjQWcZRSVTLu2Tzw6GeUAodMgQqOeg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">申し込み</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="pill">頭・頸椎・神経・頭蓋から“結果を出す”ヘッド施術</span>
+            <h1>ヘッドコンディショニング-極-</h1>
+            <p class="lead">トレーナー／セラピスト向け。リラクゼーション目的ではなく、<strong>体感変化</strong>と<strong>再現性</strong>を最優先した施術を、1日で「現場で使える状態」まで落とし込みます。</p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc_fpacTK-0-GG_N5FOGjQWcZRSVTLu2Tzw6GeUAodMgQqOeg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">申し込みはこちら（Googleフォーム）</a>
+              <a class="btn" href="#what">習得できること</a>
+            </div>
+            <div class="note">※定員に達し次第、受付を締め切ります。</div>
+          </div>
+
+          <aside class="card info-card" aria-label="開催情報">
+            <div class="section-title" style="margin-bottom:10px;">
+              <h2 style="font-size:16px;">開催情報</h2>
+              <div class="subtext">対面（リアル開催）</div>
+            </div>
+
+            <div class="info-grid">
+              <div class="kv">
+                <div class="k">日時</div>
+                <div class="v">2026年3月28日（金）10:00〜17:00</div>
+              </div>
+              <div class="kv">
+                <div class="k">会場</div>
+                <div class="v">大阪府箕面市如意谷1-6-7</div>
+              </div>
+              <div class="kv">
+                <div class="k">定員</div>
+                <div class="v">12名（先着順）</div>
+              </div>
+              <div class="kv">
+                <div class="k">受講費</div>
+                <div class="v">55,000円（税込）</div>
+              </div>
+            </div>
+
+            <div class="deadline" role="note" aria-label="申込締切">
+              <div class="k">申込締切</div>
+              <div class="v"><strong>2026年2月28日まで</strong>（ただし定員に達し次第終了）</div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="badge-row" aria-label="施術の特徴">
+              <span class="badge">ボキボキなし</span>
+              <span class="badge">強刺激なし</span>
+              <span class="badge">再現性重視</span>
+              <span class="badge">明日からメニュー化</span>
+            </div>
+
+            <div style="margin-top:14px;">
+              <a class="btn btn-primary" style="width:100%;" href="https://docs.google.com/forms/d/e/1FAIpQLSc_fpacTK-0-GG_N5FOGjQWcZRSVTLu2Tzw6GeUAodMgQqOeg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">今すぐ申し込む</a>
+              <div class="note" style="margin-top:8px;">フォームは別タブで開きます。</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="what">
+      <div class="container">
+        <div class="section-title">
+          <h2>このセミナーで習得できること</h2>
+          <div class="subtext">1day集中｜6時間 完全実装</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="callout">
+            <strong>頭が一瞬で軽くなるヘッド施術</strong>
+            <div class="subtext" style="margin-top:6px;">施術の流れと評価をセットで学び、変化の出し方を明確にします。</div>
+          </div>
+          <div class="callout">
+            <strong>眼のスッキリ感・視界のクリアさを出す技術</strong>
+            <div class="subtext" style="margin-top:6px;">眼精疲労・こめかみ周辺の違和感に対するアプローチを体系化。</div>
+          </div>
+          <div class="callout">
+            <strong>首・肩こり／頭痛／自律神経の乱れへの即対応</strong>
+            <div class="subtext" style="margin-top:6px;">症状別に「優先部位」「禁忌」「順序」を整理し、組み立てを迷わなくします。</div>
+          </div>
+          <div class="callout">
+            <strong>明日から自店メニューとして導入できる完成度</strong>
+            <div class="subtext" style="margin-top:6px;">メニュー化・価格・伝え方まで。学びで終わらせず現場へ直結。</div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:12px;">※リラクゼーション目的ではありません／※「体感変化」と「再現性」を最優先した施術です</div>
+      </div>
+    </section>
+
+    <section id="curriculum">
+      <div class="container">
+        <div class="section-title">
+          <h2>セミナーカリキュラム（全7STEP｜合計6時間）</h2>
+          <div class="subtext">実技2時間を含む</div>
+        </div>
+
+        <div class="card curriculum">
+          <details open>
+            <summary>
+              <span>【STEP1】ヘッドコンディショニング-極-とは</span>
+              <span class="step-meta">45分</span>
+            </summary>
+            <div class="details-body">
+              <ul class="list">
+                <li>一般的なヘッドスパとの決定的な違い</li>
+                <li>なぜ頭を触ると「首・肩が軽くなる」「目が開く」「睡眠の質が上がる」のか</li>
+                <li>頭蓋 × 頸椎 × 神経 × 自律神経の関係性</li>
+              </ul>
+              <div class="note">▶︎ 施術の軸が明確になり、迷いが消える</div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span>【STEP2】施術に直結する頭・頸部の機能解剖</span>
+              <span class="step-meta">60分</span>
+            </summary>
+            <div class="details-body">
+              <ul class="list">
+                <li>頭皮・頭蓋（前頭骨／側頭骨／後頭骨）の役割</li>
+                <li>後頭下筋群と頭の重さの関係</li>
+                <li>神経（特に三叉神経・迷走神経）とヘッド施術</li>
+                <li>頸椎（C1〜C7）と症状の関係性</li>
+              </ul>
+              <div class="note">▶︎ 「なぜそこを触るのか」を説明できるようになる</div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span>【STEP3】症状別ヘッドコンディショニング理論</span>
+              <span class="step-meta">45分</span>
+            </summary>
+            <div class="details-body">
+              <div class="subtext">対応できる代表症状：片頭痛／緊張性頭痛／慢性的な首・肩こり</div>
+              <ul class="list" style="margin-top:8px;">
+                <li>優先すべき部位</li>
+                <li>触れてはいけないポイント</li>
+                <li>効果が出る施術順</li>
+              </ul>
+              <div class="note">▶︎ 症状に合わせた“組み立て施術”が可能に</div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span>【STEP4】C1〜C7 頸椎の意味と調整戦略</span>
+              <span class="step-meta">45分</span>
+            </summary>
+            <div class="details-body">
+              <ul class="list">
+                <li>C1〜C7それぞれが持つ身体・神経的意味</li>
+                <li>頸椎から読み取れる「ストレス状態」「呼吸の浅さ」「自律神経の偏り」</li>
+                <li>優先して調整すべき頸椎の見極め方</li>
+              </ul>
+              <div class="note">▶︎ 感覚ではなく、根拠を持って頸椎を触れる</div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span>【STEP5】プテリオン施術（頭蓋コアアプローチ）</span>
+              <span class="step-meta">45分</span>
+            </summary>
+            <div class="details-body">
+              <div class="subtext">プテリオン：前頭骨・側頭骨・蝶形骨・頭頂骨が交差する頭蓋の要（ハブ）ポイント</div>
+              <div class="hr" style="margin:12px 0;"></div>
+              <div class="subtext" style="font-weight:800; color: rgba(255,255,255,.88);">変化が出やすい領域</div>
+              <ul class="list">
+                <li>側頭／眼／顎／脳疲労</li>
+              </ul>
+              <div class="hr" style="margin:12px 0;"></div>
+              <div class="subtext" style="font-weight:800; color: rgba(255,255,255,.88);">“ハマる”代表的な症状</div>
+              <ul class="list">
+                <li>頭痛系：側頭部がズーンと重い／眼の奥の疲れ・締めつけ／片側優位の緊張性頭痛</li>
+                <li>自律神経・脳疲労系：思考が散る／ぼーっとする／集中力低下</li>
+                <li>顎・噛み締め系：食いしばり／顎関節の違和感／歯ぎしり</li>
+                <li>眼・顔系：眼精疲労／視界がぼやける／眉〜こめかみの違和感</li>
+              </ul>
+              <div class="note">▶︎ 「ここを触ると一気に変わる」核となる技術</div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span>【STEP6】ヘッドコンディショニング-極- 実技</span>
+              <span class="step-meta">2時間</span>
+            </summary>
+            <div class="details-body">
+              <ul class="list">
+                <li>施術前評価（頭・目・首・呼吸）</li>
+                <li>頭皮・頭蓋アプローチ</li>
+                <li>プテリオン施術</li>
+                <li>後頭下筋群・頸椎調整</li>
+                <li>自律神経を整える最終アプローチ</li>
+              </ul>
+              <div class="note">※ボキボキなし／※強刺激なし／※再現性重視</div>
+              <div class="note">▶︎ 20〜30分で“結果が出る流れ”を完全習得</div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span>【STEP7】メニュー化・価格・伝え方</span>
+              <span class="step-meta">30分</span>
+            </summary>
+            <div class="details-body">
+              <ul class="list">
+                <li>ヘッドコンディショニング-極- メニュー構成例</li>
+                <li>単体／他メニューとの組み合わせ方</li>
+                <li>クライアントへの説明テンプレート</li>
+              </ul>
+              <div class="note">▶︎ 学びで終わらせず、売上に直結</div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="outcomes">
+      <div class="container">
+        <div class="section-title">
+          <h2>受講後にできるようになること</h2>
+          <div class="subtext">現場で“結果”につなげる</div>
+        </div>
+
+        <div class="card" style="padding:18px;">
+          <div class="grid-2">
+            <div class="callout"><strong>頭痛・首肩こり・眼精疲労に即対応</strong><div class="subtext" style="margin-top:6px;">症状別の優先順位と禁忌を整理し、迷わず組み立てられるようにします。</div></div>
+            <div class="callout"><strong>プテリオンを“意味を理解して”使える</strong><div class="subtext" style="margin-top:6px;">核となるポイントを狙って、変化の出し方を再現可能にします。</div></div>
+            <div class="callout"><strong>頸椎を感覚ではなく構造で調整できる</strong><div class="subtext" style="margin-top:6px;">C1〜C7の意味と戦略を理解し、根拠を持って触れます。</div></div>
+            <div class="callout"><strong>高単価ヘッドメニューとして自信を持って提供</strong><div class="subtext" style="margin-top:6px;">メニュー構成・価格・伝え方まで含め、導入の不安を潰します。</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <div class="section-title">
+          <h2>セミナー概要</h2>
+          <div class="subtext">対象：トレーナー・セラピスト</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card" style="padding:18px;">
+            <div class="k">セミナー名</div>
+            <div class="v">ヘッドコンディショニング-極-</div>
+
+            <div class="hr"></div>
+
+            <div class="k">開催形式</div>
+            <div class="v">1day（合計6時間）</div>
+
+            <div class="k" style="margin-top:10px;">受講形式</div>
+            <div class="v">対面（リアル開催）</div>
+
+            <div class="k" style="margin-top:10px;">ゴール</div>
+            <div class="v">明日から店のメニューとして使える状態</div>
+          </div>
+
+          <div class="card" style="padding:18px;">
+            <div class="k">日時</div>
+            <div class="v">2026年3月28日（金）10:00〜17:00</div>
+
+            <div class="k" style="margin-top:10px;">会場</div>
+            <div class="v">大阪府箕面市如意谷1-6-7</div>
+
+            <div class="k" style="margin-top:10px;">定員</div>
+            <div class="v">12名（先着順）</div>
+
+            <div class="k" style="margin-top:10px;">受講費</div>
+            <div class="v">55,000円（税込）</div>
+
+            <div class="deadline" style="margin-top:12px;">
+              <div class="k">申込締切</div>
+              <div class="v"><strong>2026年2月28日まで</strong>（ただし定員に達し次第終了）</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructor">
+      <div class="container">
+        <div class="section-title">
+          <h2>講師</h2>
+          <div class="subtext">原口 慶篤</div>
+        </div>
+
+        <div class="card instructor">
+          <div class="instructor-grid">
+            <div class="portrait" aria-label="講師写真">
+              <img src="instructor-profile.jpg.jpg" alt="講師：原口 慶篤" loading="lazy" />
+            </div>
+            <div>
+              <p class="name">原口 慶篤</p>
+              <div class="role">パーソナルトレーナー／整体師</div>
+              <div class="bio">
+                14歳の頃に筋トレを始めたことをきっかけにトレーナー業界へ。専門学校卒業後、鍼灸整骨院に就職し、トレーナー・整体師として現場経験を積む。もっと知識が欲しくて2019年に専門学校へ再入学。学生のまま2020年に独立し、コンディショニングを武器にHP無し広告無し口コミ紹介のみでリピート客が後を絶たない。他のトレーナーとは違う異色な経歴と独自に編み出したゼロ調整技術で様々な身体の問題を解決する。現在は企業研修4社の身体のプロにコンディショニング等の技術指導をしている。
+              </div>
+              <div class="badge-row" style="margin-top:14px;">
+                <span class="badge">現場主義</span>
+                <span class="badge">再現性</span>
+                <span class="badge">メニュー化</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="container">
+        <div class="cta">
+          <h2>先着12名｜申し込み受付中</h2>
+          <p>申込締切は<strong>2026年2月28日</strong>まで（ただし定員に達し次第終了）。対面だからこそ、触れて学び、手技をその場で実装できます。</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc_fpacTK-0-GG_N5FOGjQWcZRSVTLu2Tzw6GeUAodMgQqOeg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">申し込みはこちら（Googleフォーム）</a>
+            <a class="btn" href="#overview">概要を確認する</a>
+          </div>
+          <div class="note">フォームは別タブで開きます。</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>よくある質問</h2>
+          <div class="subtext">参加前の不安を解消</div>
+        </div>
+
+        <div class="card faq">
+          <details>
+            <summary>
+              <span>対象者は誰ですか？</span>
+              <span class="step-meta">FAQ</span>
+            </summary>
+            <div class="details-body">トレーナー・セラピスト向けの内容です。現場での施術・セッションに落とし込む前提で進めます。</div>
+          </details>
+          <details>
+            <summary>
+              <span>締切はいつですか？</span>
+              <span class="step-meta">FAQ</span>
+            </summary>
+            <div class="details-body">申込締切は2026年2月28日までです。ただし定員（12名）に達し次第、受付を終了します。</div>
+          </details>
+          <details>
+            <summary>
+              <span>施術は強刺激ですか？</span>
+              <span class="step-meta">FAQ</span>
+            </summary>
+            <div class="details-body">ボキボキなし、強刺激なし、再現性重視の内容です。</div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating" aria-hidden="false">
+    <div class="floating-inner">
+      <div class="floating-bar">
+        <div class="floating-text">
+          <strong>ヘッドコンディショニング-極-｜先着12名</strong>
+          <span>締切：2026/02/28（定員到達で終了）</span>
+        </div>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSc_fpacTK-0-GG_N5FOGjQWcZRSVTLu2Tzw6GeUAodMgQqOeg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">申し込み</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div>© ヘッドコンディショニング-極-</div>
+      <div style="margin-top:6px;">申込フォーム：Google Forms（外部サイトへ遷移します）</div>
+    </div>
+  </footer>
+</body>
+</html>
