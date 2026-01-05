@@ -254,6 +254,30 @@
       gap: 14px;
       font-weight: 800;
       font-size: 14px;
+      position: relative;
+      padding-right: 140px;
+    }
+
+    summary::after{
+      content: "タップで開く ▾";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      font-weight: 900;
+      color: var(--muted-2);
+      letter-spacing: .04em;
+      opacity: .95;
+    }
+
+    details[open] summary::after{
+      content: "閉じる ▴";
+      color: rgba(255,255,255,.72);
+    }
+
+    summary:hover{
+      background: rgba(255,255,255,.04);
     }
 
     summary::-webkit-details-marker{ display:none; }
